@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions nécessaires -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="myapplication"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.myapplication"
+        tools:targetApi="31">
+
+        <!-- ACTIVITÉ PRINCIPALE -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- AUTHENTIFICATION -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- DASHBOARDS -->
+        <activity
+            android:name=".activities.AcheteurDashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.AgriculteurDashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.LivreurDashboardActivity"
+            android:exported="false" />
+
+        <!-- PRODUITS -->
+        <activity
+            android:name=".activities.AddProductActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.ProductDetailsActivity"
+            android:exported="false"
+            android:label="Détails du produit" />
+        <activity
+            android:name=".activities.CartActivity"
+            android:exported="false"
+            android:label="Mon panier" />
+    </application>
+
+</manifest>

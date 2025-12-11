@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Theme principal de l'application -->
+    <!-- CORRECTION ICI: Theme.myapplication (pas myaplication) -->
+    <style name="Theme.myapplication" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Couleurs principales -->
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryDark">@color/primary_dark_green</item>
+        <item name="colorAccent">@color/accent_orange</item>
+
+        <!-- Couleur de fond -->
+        <item name="android:windowBackground">@color/white</item>
+
+        <!-- Barre de statut -->
+        <item name="android:statusBarColor">@color/primary_dark_green</item>
+
+        <!-- Icônes de la barre de statut (clair) -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <!-- Theme pour les activités en plein écran -->
+    <style name="Theme.myapplication.FullScreen" parent="Theme.myapplication">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Theme pour les dialogs -->
+    <style name="Theme.myapplication.Dialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorAccent">@color/accent_orange</item>
+    </style>
+
+</resources>

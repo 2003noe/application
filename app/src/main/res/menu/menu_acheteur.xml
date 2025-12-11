@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Accueil"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:id="@+id/nav_categories"
+        android:title="Catégories"
+        android:icon="@drawable/ic_category" />
+
+    <item
+        android:id="@+id/nav_cart"
+        android:title="Panier"
+        android:icon="@drawable/ic_shopping_cart" />
+
+    <item
+        android:id="@+id/nav_orders"
+        android:title="Commandes"
+        android:icon="@drawable/ic_orders" />
+
+    <item
+        android:id="@+id/nav_favorites"
+        android:title="Favoris"
+        android:icon="@drawable/ic_favorite" />
+
+    <item
+        android:id="@+id/nav_messages"
+        android:title="Messages"
+        android:icon="@drawable/ic_message" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Mon Profil"
+        android:icon="@drawable/ic_person" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Paramètres"
+        android:icon="@drawable/ic_settings" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Déconnexion"
+        android:icon="@drawable/ic_logout" />
+</menu>

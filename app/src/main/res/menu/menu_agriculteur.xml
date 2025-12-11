@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_dashboard"
+            android:title="Tableau de bord"
+            android:icon="@drawable/ic_home" />
+
+        <item
+            android:id="@+id/menu_my_products"
+            android:title="Mes produits"
+            android:icon="@drawable/ic_products" />
+
+        <item
+            android:id="@+id/menu_add_product"
+            android:title="Ajouter produit"
+            android:icon="@drawable/ic_add" />
+
+        <item
+            android:id="@+id/menu_orders"
+            android:title="Commandes"
+            android:icon="@drawable/ic_orders" />
+
+        <item
+            android:id="@+id/menu_sales"
+            android:title="Ventes"
+            android:icon="@drawable/ic_sales" />
+
+        <item
+            android:id="@+id/menu_messages"
+            android:title="Messages"
+            android:icon="@drawable/ic_message" />
+
+        <item
+            android:id="@+id/menu_profile"
+            android:title="Mon profil"
+            android:icon="@drawable/ic_person" />
+    </group>
+
+    <item android:title="Paramètres">
+        <menu>
+            <item
+                android:id="@+id/menu_settings"
+                android:title="Paramètres"
+                android:icon="@drawable/ic_settings" />
+
+            <item
+                android:id="@+id/menu_logout"
+                android:title="Déconnexion"
+                android:icon="@drawable/ic_logout" />
+        </menu>
+    </item>
+</menu>
